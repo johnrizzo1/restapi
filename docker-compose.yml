@@ -10,3 +10,9 @@ services:
       POSTGRES_DB: restapi
     ports:
     - 5432:5432
+
+  cache:
+    image: redis:3.2.4
+    ports:
+    - "6379:6379"
+
