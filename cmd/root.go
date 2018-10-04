@@ -77,6 +77,8 @@ func initConfig() {
 
 		// Search config in home directory with name ".rest-api" (without extension).
 		viper.AddConfigPath(home)
+		// TODO: Need to add additional config paths like etc and
+		// 		 whatever might be specified in the config path environment var
 		viper.SetConfigName(".rest-api")
 	}
 
